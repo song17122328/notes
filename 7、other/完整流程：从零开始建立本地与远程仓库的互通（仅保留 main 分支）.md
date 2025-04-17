@@ -2,6 +2,16 @@
 
 ------
 
+#### 0. 已有操作
+
+```bash
+git add .
+git commit -m "re"
+git push
+```
+
+
+
 #### **1. 本地初始化 Git 仓库**
 
 ```bash
@@ -104,8 +114,6 @@ git remote show origin   # 检查远程仓库信息
 - 原因：远程有 `README.md` 等文件，本地未同步。
 
 - 解决：
-
-  
 
   ```bash
   git pull origin main --allow-unrelated-histories  # 强制合并
