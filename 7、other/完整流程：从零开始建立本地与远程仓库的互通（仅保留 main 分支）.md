@@ -105,11 +105,9 @@ git remote show origin   # 检查远程仓库信息
 
 - 解决：
 
-  bash
+  
 
-  复制
-
-  ```
+  ```bash
   git pull origin main --allow-unrelated-histories  # 强制合并
   git push -u origin main
   ```
