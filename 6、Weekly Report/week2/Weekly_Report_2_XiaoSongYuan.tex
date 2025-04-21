@@ -1,0 +1,101 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem} % 提供更灵活的列表控制
+
+\begin{document}
+
+\title{Weekly Report (April 14,2025 - April 20,2025)}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Xiaosong Yuan}
+\IEEEauthorblockA{\textit{AISIG}\\
+\textit{Shanghai Jiao Tong University}\\
+Shanghai, China\\
+yuanxiaosong1999@gmail.com}}
+
+\maketitle
+
+\begin{abstract}
+This weekly report summarizes my research progress from April 14 to April 20, 2025. The focus includes analyzing the DistServe paper about optimizing LLM serving through prefill-decoding disaggregation, studying fundamental neural network architectures (ResNet, Batch Normalization), and identifying current challenges in research methodology. Key findings reveal the trade-offs in distributed LLM serving systems and the importance of normalization techniques in deep learning. The report concludes with plans for strengthening the foundational knowledge and improving paper reading efficiency.
+\end{abstract}
+\begin{IEEEkeywords}
+LLM serving, distributed systems, neural networks, Batch Normalization, ResNet, research methodology
+\end{IEEEkeywords}
+
+\section{Paper Reading}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item \textbf{DistServe}: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving.
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Core Problem}: Improves TTFT and TPOT by separating prefill and decoding phases while maintaining SLO constraints to increase effective throughput.
+        \item \textbf{Key Innovations}:
+        \begin{itemize}[leftmargin=*]
+            \item Dedicated GPU groups: Prefill group (compute-intensive) uses tensor parallelism.
+            \item The Decoding group (I/O-intensive) uses pipeline parallelism.
+            \item NVLINK minimizes communication overhead between groups.
+        \end{itemize}
+        \item \textbf{Open Questions}: How to handle inter-group communication without expensive NVLINK? Alternative solutions may be needed.
+    \end{itemize}
+    Detailed analysis is available on the iCloud forum.
+\end{itemize}
+
+\section{Knowledge Acquisition}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item \textbf{Key Concepts}:
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{Batch Normalization}:
+        \begin{itemize}[leftmargin=*]
+            \item Addresses gradient explosion/vanishing similarly to weight decay.
+            \item Weight decay regularizes via L2-norm constraints.
+            \item BN standardizes layer distributions through learnable parameters ($\alpha$, $\beta$).
+            \item Typically placed between linear and activation layers.
+        \end{itemize}
+        \item \textbf{ResNet}:
+        \begin{itemize}[leftmargin=*]
+            \item Enables ultra-deep networks (1000+ layers) through skip connections.
+            \item Additive operations prevent gradient vanishing in backward propagation.
+            \item Lower layers remain trainable despite small gradients in the upper layers.
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Studied Architectures}: LeNet, AlexNet, VGG, NiN, GoogLeNet, ResNet.
+\end{itemize}
+\section{Current Challenges and Next Steps}
+\begin{enumerate}[leftmargin=*,noitemsep]
+    \item \textbf{Foundational Knowledge Enhancement}
+    \begin{itemize}[leftmargin=*]
+        \item Complete “Dive into Deep Learning” (by Mu Li) within the coming week.
+        \item Continue systematic study of “LLM BOOK” for large language model fundamentals.
+        \item Initiate parallel computing studies through:
+        \begin{itemize}[leftmargin=*]
+            \item Stanford CS149: Parallel Computing.
+            \item CSAPP (Computer Systems: A Programmer's Perspective).
+        \end{itemize}
+    \end{itemize}
+    
+    \item \textbf{Paper Reading Methodology Improvement}
+    \begin{itemize}[leftmargin=*]
+        \item Strengthen literature accumulation through daily paper analysis.
+        \item Develop critical reading skills via:
+        \begin{itemize}[leftmargin=*]
+            \item Regular identification of paper contributions/limitations.
+            \item Comparative analysis with state-of-the-art works.
+        \end{itemize}
+        \item Maintain consistent practice (Practice makes perfect).
+    \end{itemize}
+    
+    \item \textbf{Research Practice Transition}
+    \begin{itemize}[leftmargin=*]
+        \item Experimental replication:
+        \begin{itemize}[leftmargin=*]
+            \item Select 1-2 key papers for implementation.
+            \item Focus on reproducible components (e.g., prefill-decoding separation).
+        \end{itemize}
+        \item Academic writing preparation:
+        \begin{itemize}[leftmargin=*]
+            \item Draft methodology sections for potential publications.
+            \item Participate in vertical research projects for hands-on experience.
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
+\end{document}
