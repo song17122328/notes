@@ -1,0 +1,152 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{CJKutf8}
+
+\title{Weekly Report (April 21,2025 - April 27,2025)}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Xiaosong Yuan}
+\IEEEauthorblockA{\textit{AISIG}\\
+\textit{Shanghai Jiao Tong University}\\
+Shanghai, China\\
+yuanxiaosong1999@gmail.com}}
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\maketitle
+
+\begin{abstract}
+This report documents my learning progress during April 21-27, 2025. It covers three main aspects: (1) Completion of three chapters from the deep learning textbook by Mu Li, focusing on computational performance, computer vision, and recurrent neural networks; (2) A detailed study of the PartialLoading paper about parameter-sharing edge inference optimization; (3) Identification of current challenges and specific improvement plans.
+\end{abstract}
+
+\begin{IEEEkeywords}
+deep learning, edge computing, model parallelism, parameter sharing, RNN, computer vision
+\end{IEEEkeywords}
+
+\section{Knowledge Learning}
+This week I mainly completed the study of three chapters from Mu Li's “Dive into Deep Learning”: computational performance, computer vision, and recurrent neural networks. Only one chapter on attention mechanisms remains, which I plan to finish next week.
+
+The computational performance chapter primarily discussed the characteristics and application scenarios of different parallel strategies, such as data parallelism, model parallelism (including inter-layer and operator parallelism), and pipeline parallelism. It then introduced single-machine multi-GPU training and distributed GPU cluster training based on data parallelism, covering relevant concepts and workflows.
+
+The computer vision chapter introduced classical tasks in the visual domain along with their corresponding processing methods and model implementations, including image augmentation techniques, transfer learning (fine-tuning techniques, which form the basis for problems discussed in the PartialLoading paper), object detection tasks, semantic segmentation, and style transfer.
+
+Through the recurrent neural networks chapter, I began learning about NLP. Unlike the visual domain, deep neural networks in NLP are all autoregressive sequence models. This chapter lays the foundation for understanding and mastering LLM technologies later.
+
+Through this week's study, I have gained a relatively clear understanding of neural networks and basic knowledge about the technical background involved in related papers. The next step is to continue learning other knowledge while emphasizing review and consolidation of deep learning.
+
+\section{Paper Study}
+\textbf{PartialLoading: User Scheduling and Bandwidth Allocation for Parameter-sharing Edge Inference}
+
+The authors argue that the latency of edge devices consists of two parts: model loading latency and inference computation latency. As shown in the figure below, model loading latency accounts for 90\% of the total, so reducing model loading latency can significantly decrease the overall edge device latency.
+
+
+
+1. \textbf{What is model loading latency?}
+
+In edge computing scenarios, \textbf{model loading latency} mainly refers to the time required to load the AI model from storage devices (such as hard disks or memory) \textbf{into the GPU/TPU memory}.
+
+Since model loading latency refers to the time to load model parameters into memory (or GPU memory), if part of the model weights (parameters) are already in memory, there's no need for swapping, which can significantly reduce model loading latency. Therefore, the authors proposed using parameter-sharing methods, keeping some parameters in memory, and directly reusing them for the next model.
+
+2. \textbf{When can parameter sharing occur?}
+
+The \textbf{parameter sharing} in this paper mainly occurs between \textbf{different downstream models deployed on the same edge server}:
+
+\begin{itemize}
+\item \textbf{Downstream models derived from the same pre-trained model}:
+\begin{itemize}
+\item For example, multiple task-specific models (e.g., Task 1 for cat/dog classification, Task 2 for vehicle classification) obtained through \textbf{layer freezing} or \textbf{parameter-efficient fine-tuning (such as LoRA)} based on a ResNet-50 pre-trained model.
+\item The \textbf{low-level parameters (e.g., convolutional layers)} of these downstream models directly share weights from the pre-trained model (as shown in Figure 2).
+\end{itemize}
+
+\item \textbf{Structurally similar heterogeneous models}:
+\begin{itemize}
+\item Different architecture models may have functionally similar layers (e.g., shallow feature extraction layers in CNNs), enabling parameter sharing through alignment.
+\end{itemize}
+\end{itemize}
+
+The authors designed PartialLoading to maximize parameter sharing, thereby reducing latency and maximizing model throughput.
+
+3. \textbf{How does PartialLoading combine user scheduling and bandwidth allocation to maximize throughput?}
+
+\begin{itemize}
+\item \textbf{User scheduling}: Determines the optimal user scheduling order through DP algorithm or greedy algorithm.
+
+\textbf{Concrete applications}
+
+\textbf{Application of Dynamic Programming (DP) Algorithm}
+
+\textbf{Applicable scenarios}
+
+For the \textbf{"bottom-layer sharing"} special case (where models only share parameters at the bottom layers, like ResNet fine-tuned models in Figure 2):
+
+\begin{itemize}
+\item \textbf{Problem characteristics}: Shared parameters are concentrated at the model bottom, and scheduling order impact can be structurally decomposed.
+\item \textbf{DP design approach}:
+\begin{itemize}
+\item \textbf{State definition}: Uses "already loaded shared layers" and "remaining users to schedule" as states
+\item \textbf{State transition}: Each time select a user whose model shares the most layers with currently loaded models
+\item \textbf{Optimal substructure}: Global optimal solution can be derived from optimal solutions of subproblems (scheduling subsets of users)
+\end{itemize}
+\item \textbf{Complexity}: Polynomial time (e.g., O($n^2$)), suitable for real-time edge server computation.
+\end{itemize}
+
+\textbf{Example}
+
+Assume there are 3 tasks (Model A, B, C) sharing bottom-layer parameter blocks:
+
+DP will prioritize scheduling models sharing more layers (e.g., A→B→C) to avoid repeated loading of shared parts.
+
+\textbf{Application of Greedy Algorithm}
+
+\textbf{Applicable scenarios}
+
+For \textbf{general cases} (shared parameter blocks appear at arbitrary layers, like middle CNN layers or LLM attention modules):
+
+\begin{itemize}
+\item \textbf{Problem characteristics}: Irregular parameter sharing locations make DP state space explode (cannot be efficiently decomposed).
+\item \textbf{Greedy strategy}:
+\begin{itemize}
+\item \textbf{Local optimization at each step}: Always selects the unscheduled model sharing the most parameters with currently loaded models
+\item \textbf{Heuristic rule}: Prioritizes reusing the largest possible parameter blocks to reduce immediate loading time
+\end{itemize}
+\item \textbf{Advantages}: Computationally efficient (e.g., O($n\log n$)), suitable for dynamic edge environments
+\item \textbf{Cost}: May yield suboptimal solutions, but experiments show actual performance approaches optimal
+\end{itemize}
+
+\textbf{Example}
+
+If Model A shares 50\% parameters with currently loaded models while Model B shares 30\%, prioritize scheduling A.
+
+
+Assume an edge server needs to process 3 tasks:
+
+\begin{itemize}
+\item \textbf{Model A} (Task 1): Shares bottom-layer parameter block $\alpha$
+\item \textbf{Model B} (Task 2): Shares α + middle-layer parameter block $\beta$
+\item \textbf{Model C} (Task 3): No shared parameters
+\end{itemize}
+
+\textbf{Traditional scheduling}: Random order (e.g., A→C→B) → Each time loads full parameters, total loading time = T(A) + T(C) + T(B).
+
+\textbf{PartialLoading scheduling}: A→B→C → When loading B, only needs to load non-shared parts ($\beta$), saving loading time for $\alpha$.
+
+\item \textbf{Bandwidth allocation problem}
+
+\textbf{Objective}: After determining the scheduling order, allocate spectrum bandwidth to each user to ensure their data transmission matches model loading time. Has \textbf{closed-form optimal solution} (can be directly solved via convex optimization).
+\end{itemize}
+
+\section{Current Challenges and Next Steps}
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Insufficient paper reading}: Need to further study the four papers from next week while reading more related papers to deepen understanding. \textbf{Lack comprehensive survey-level understanding of current research field.}
+
+\item \textbf{Foundational knowledge learning progresses slower than expected}: Didn't complete the goal of finishing deep learning this week. About 3 more days are needed next week, while weak points in relevant knowledge still require further consolidation.
+
+\item \textbf{Hands-on practice not yet started} for the \href{https://github.com/ZinuoCai/edge-llm-serving}{\texttt{edge-llm-serving}} project. Need to make progress on this project next week.
+\end{enumerate}
+
+\end{CJK}
+\end{document}
