@@ -30,7 +30,7 @@ git commit -m "Initial commit"  # 提交到本地仓库
 
 ------
 
-#### **3. 重命名本地分支为 `main`（如果默认是 `master`）**
+#### *i3. 重命名本地分支为 `main`（如果默认是 `master`）**
 
 ```bash
 git branch -M main       # 将当前分支重命名为 main
