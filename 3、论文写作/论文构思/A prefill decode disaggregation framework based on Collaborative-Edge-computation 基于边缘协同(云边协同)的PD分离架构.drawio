@@ -4,56 +4,139 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="SmYpZCKEzFdWcqqBFo2v-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="SmYpZCKEzFdWcqqBFo2v-1" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" parent="1" vertex="1">
           <mxGeometry x="80" y="40" width="650" height="500" as="geometry" />
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-5" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="760" y="40" as="sourcePoint" />
-            <mxPoint x="760" y="540" as="targetPoint" />
+            <mxPoint x="890" y="40" as="sourcePoint" />
+            <mxPoint x="890" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-6" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;跑满设备所需要的&lt;/div&gt;计算强度(&lt;strong style=&quot;color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; text-align: start; text-wrap-mode: wrap; box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;FLOPs/byte&lt;/strong&gt;)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="760" y="280" width="160" height="60" as="geometry" />
+          <mxGeometry x="890" y="280" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-7" value="高" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="740" y="18" width="40" height="30" as="geometry" />
+          <mxGeometry x="870" y="18" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-8" value="低" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="740" y="540" width="40" height="30" as="geometry" />
+          <mxGeometry x="870" y="540" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-9" value="高" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="740" y="18" width="40" height="30" as="geometry" />
+          <mxGeometry x="870" y="18" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-10" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="760" y="40" as="sourcePoint" />
-            <mxPoint x="760" y="540" as="targetPoint" />
+            <mxPoint x="890" y="40" as="sourcePoint" />
+            <mxPoint x="890" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-11" value="低" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="740" y="540" width="40" height="30" as="geometry" />
+          <mxGeometry x="870" y="540" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SmYpZCKEzFdWcqqBFo2v-13" value="高" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="40" y="18" width="40" height="30" as="geometry" />
+        <mxCell id="FAd7lpdi-thVueiVJN3o-3" value="进行设备调度划分的依据：&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;我需要知道&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1、计算资源所在网络的&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;带宽(Bytes/Second)&lt;/b&gt;&lt;div&gt;2、模型需要的&lt;b&gt;内存容量&lt;/b&gt;、运行时激活值容量等 (&lt;b&gt;GBs&lt;/b&gt;)&lt;/div&gt;&lt;div&gt;3、单个计算资源的最大内存容量、该计算设备的计算能力&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-75" y="578" width="330" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="SmYpZCKEzFdWcqqBFo2v-14" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+        <mxCell id="FAd7lpdi-thVueiVJN3o-4" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="60" y="40" as="sourcePoint" />
-            <mxPoint x="60" y="540" as="targetPoint" />
+            <mxPoint x="115" y="210" as="sourcePoint" />
+            <mxPoint x="695" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SmYpZCKEzFdWcqqBFo2v-15" value="低" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="40" y="540" width="40" height="30" as="geometry" />
+        <mxCell id="FAd7lpdi-thVueiVJN3o-5" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1060" y="250" width="560" height="185" as="geometry" />
         </mxCell>
-        <mxCell id="SmYpZCKEzFdWcqqBFo2v-16" value="计算设备的计算能力&lt;div&gt;(FLOPs/Second)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-80" y="280" width="130" height="40" as="geometry" />
+        <mxCell id="FAd7lpdi-thVueiVJN3o-1" value="&lt;strong class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;Computational Intensity&lt;/span&gt;&lt;/strong&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;is the ratio of arithmetic operations (computations) to memory operations (data movement).&lt;/span&gt;&lt;font class=&quot;notranslate immersive-translate-target-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; lang=&quot;zh-CN&quot; style=&quot;box-sizing: border-box; word-break: break-word; user-select: text; color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;The units are typically&amp;nbsp;&lt;/span&gt;&lt;strong style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;FLOPs/byte&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;&amp;nbsp;(Floating-Point Operations per Byte).&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box;&quot;&gt;&lt;font class=&quot;notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; style=&quot;box-sizing: border-box; display: inline-block; margin: 8px 0px !important;&quot;&gt;&lt;font class=&quot;notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; style=&quot;box-sizing: border-box; font-family: inherit;&quot;&gt;&lt;strong class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;计算强度&lt;/span&gt;&lt;/strong&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;是算术运算（计算）与内存运算（数据移动）的比率。&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;span style=&quot;color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;单位通常是&amp;nbsp;&lt;/span&gt;&lt;strong style=&quot;color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;FLOP/字节&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;（每字节浮点运算次数）。&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="FAd7lpdi-thVueiVJN3o-5">
+          <mxGeometry width="560" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="FAd7lpdi-thVueiVJN3o-1" value="&lt;strong class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;Computational Intensity&lt;/span&gt;&lt;/strong&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;is the ratio of arithmetic operations (computations) to memory operations (data movement).&lt;/span&gt;&lt;font class=&quot;notranslate immersive-translate-target-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; lang=&quot;zh-CN&quot; style=&quot;box-sizing: border-box; word-break: break-word; user-select: text; color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;The units are typically&amp;nbsp;&lt;/span&gt;&lt;strong style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;FLOPs/byte&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;&amp;nbsp;(Floating-Point Operations per Byte).&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box;&quot;&gt;&lt;font class=&quot;notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; style=&quot;box-sizing: border-box; display: inline-block; margin: 8px 0px !important;&quot;&gt;&lt;font class=&quot;notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; style=&quot;box-sizing: border-box; font-family: inherit;&quot;&gt;&lt;strong class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;计算强度&lt;/span&gt;&lt;/strong&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;是算术运算（计算）与内存运算（数据移动）的比率。&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;span style=&quot;color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;单位通常是&amp;nbsp;&lt;/span&gt;&lt;strong style=&quot;color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;FLOP/字节&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;（每字节浮点运算次数）。&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="940" y="250" width="560" height="90" as="geometry" />
+        <mxCell id="FAd7lpdi-thVueiVJN3o-2" value="&lt;strong class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box; color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; data-immersive-translate-paragraph=&quot;1&quot; style=&quot;box-sizing: border-box;&quot;&gt;Computational Intensity = Total Arithmetic Operations / Total Bytes Transferred&lt;font class=&quot;notranslate immersive-translate-target-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; lang=&quot;zh-CN&quot; style=&quot;box-sizing: border-box; word-break: break-word; user-select: text;&quot;&gt;&lt;br style=&quot;box-sizing: border-box;&quot;&gt;&lt;font class=&quot;notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; style=&quot;box-sizing: border-box; display: inline-block; margin: 8px 0px !important;&quot;&gt;&lt;font class=&quot;notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; style=&quot;box-sizing: border-box; font-family: inherit;&quot;&gt;计算强度 = 总算术运算次数 / 总传输字节数&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/strong&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="FAd7lpdi-thVueiVJN3o-5">
+          <mxGeometry y="95" width="560" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="FAd7lpdi-thVueiVJN3o-2" value="&lt;strong class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box; color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; data-immersive-translate-paragraph=&quot;1&quot; style=&quot;box-sizing: border-box;&quot;&gt;Computational Intensity = Total Arithmetic Operations / Total Bytes Transferred&lt;font class=&quot;notranslate immersive-translate-target-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; lang=&quot;zh-CN&quot; style=&quot;box-sizing: border-box; word-break: break-word; user-select: text;&quot;&gt;&lt;br style=&quot;box-sizing: border-box;&quot;&gt;&lt;font class=&quot;notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; style=&quot;box-sizing: border-box; display: inline-block; margin: 8px 0px !important;&quot;&gt;&lt;font class=&quot;notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; style=&quot;box-sizing: border-box; font-family: inherit;&quot;&gt;计算强度 = 总算术运算次数 / 总传输字节数&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/strong&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="940" y="345" width="560" height="90" as="geometry" />
+        <mxCell id="FAd7lpdi-thVueiVJN3o-19" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="115" y="380" as="sourcePoint" />
+            <mxPoint x="700" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-20" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry y="40" width="60" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="FAd7lpdi-thVueiVJN3o-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-8" value="" style="endArrow=none;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="FAd7lpdi-thVueiVJN3o-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="170" as="sourcePoint" />
+            <mxPoint x="60" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-9" value="" style="endArrow=none;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="FAd7lpdi-thVueiVJN3o-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="340" as="sourcePoint" />
+            <mxPoint x="60" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-10" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="FAd7lpdi-thVueiVJN3o-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="498.81999999999994" as="sourcePoint" />
+            <mxPoint x="60" y="498.81999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-11" value="" style="endArrow=none;html=1;rounded=0;dashed=1;" edge="1" parent="FAd7lpdi-thVueiVJN3o-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="170" as="sourcePoint" />
+            <mxPoint x="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;云资源&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FAd7lpdi-thVueiVJN3o-11">
+          <mxGeometry x="-0.0076" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-15" value="" style="endArrow=none;html=1;rounded=0;dashed=1;" edge="1" parent="FAd7lpdi-thVueiVJN3o-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="340" as="sourcePoint" />
+            <mxPoint x="30" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;高计算性能&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;边缘资源&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FAd7lpdi-thVueiVJN3o-15">
+          <mxGeometry x="-0.0076" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-17" value="" style="endArrow=none;html=1;rounded=0;dashed=1;" edge="1" parent="FAd7lpdi-thVueiVJN3o-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="29.830000000000002" y="500" as="sourcePoint" />
+            <mxPoint x="29.830000000000002" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;&quot;&gt;低性能性能&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;边缘资源&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FAd7lpdi-thVueiVJN3o-17">
+          <mxGeometry x="-0.0076" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-23" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-100" y="18" width="40" height="552" as="geometry" />
+        </mxCell>
+        <mxCell id="SmYpZCKEzFdWcqqBFo2v-13" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;高&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FAd7lpdi-thVueiVJN3o-23" vertex="1">
+          <mxGeometry width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SmYpZCKEzFdWcqqBFo2v-14" value="" style="endArrow=classic;html=1;rounded=0;" parent="FAd7lpdi-thVueiVJN3o-23" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="24" y="22" as="sourcePoint" />
+            <mxPoint x="24" y="522" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-21" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;计算资源的计算能力&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(FLOPs/Second)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" vertex="1" connectable="0" parent="SmYpZCKEzFdWcqqBFo2v-14">
+          <mxGeometry x="0.0512" y="3" relative="1" as="geometry">
+            <mxPoint x="-7" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SmYpZCKEzFdWcqqBFo2v-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;低&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FAd7lpdi-thVueiVJN3o-23" vertex="1">
+          <mxGeometry y="522" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
