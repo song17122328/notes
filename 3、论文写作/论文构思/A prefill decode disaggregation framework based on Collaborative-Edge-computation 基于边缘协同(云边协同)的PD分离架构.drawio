@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.5">
   <diagram name="第 1 页" id="V22OmR0B8pXm07JRSq3R">
-    <mxGraphModel dx="2053" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1869" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -9,30 +9,30 @@
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-5" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="890" y="40" as="sourcePoint" />
-            <mxPoint x="890" y="540" as="targetPoint" />
+            <mxPoint x="770" y="36" as="sourcePoint" />
+            <mxPoint x="770" y="536" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-6" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;跑满设备所需要的&lt;/div&gt;计算强度(&lt;strong style=&quot;color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; text-align: start; text-wrap-mode: wrap; box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;FLOPs/byte&lt;/strong&gt;)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="890" y="280" width="160" height="60" as="geometry" />
+          <mxGeometry x="770" y="276" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-7" value="高" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="870" y="18" width="40" height="30" as="geometry" />
+          <mxGeometry x="750" y="14" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-8" value="低" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="870" y="540" width="40" height="30" as="geometry" />
+          <mxGeometry x="750" y="536" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-9" value="高" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="870" y="18" width="40" height="30" as="geometry" />
+          <mxGeometry x="750" y="14" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-10" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="890" y="40" as="sourcePoint" />
-            <mxPoint x="890" y="540" as="targetPoint" />
+            <mxPoint x="770" y="36" as="sourcePoint" />
+            <mxPoint x="770" y="536" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-11" value="低" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="870" y="540" width="40" height="30" as="geometry" />
+          <mxGeometry x="750" y="536" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FAd7lpdi-thVueiVJN3o-3" value="进行设备调度划分的依据：&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;我需要知道&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1、计算资源所在网络的&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;带宽(Bytes/Second)&lt;/b&gt;&lt;div&gt;2、模型需要的&lt;b&gt;内存容量&lt;/b&gt;、运行时激活值容量等 (&lt;b&gt;GBs&lt;/b&gt;)&lt;/div&gt;&lt;div&gt;3、单个计算资源的最大内存容量、该计算设备的计算能力&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-75" y="578" width="330" height="90" as="geometry" />
@@ -50,7 +50,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FAd7lpdi-thVueiVJN3o-20" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry y="40" width="60" height="500" as="geometry" />
+          <mxGeometry x="-10" y="40" width="1080" height="1080" as="geometry" />
         </mxCell>
         <mxCell id="FAd7lpdi-thVueiVJN3o-7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="FAd7lpdi-thVueiVJN3o-20">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -109,8 +109,17 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-26" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-630-d@2x.png;" vertex="1" parent="FAd7lpdi-thVueiVJN3o-20">
+          <mxGeometry x="80" y="-10" width="177.45" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-46" value="&lt;span class=&quot;inline-code ng-star-inserted&quot; data-immersive-translate-walked=&quot;022dad9b-f5fe-4674-8ad2-f313efca0379&quot; data-immersive-translate-paragraph=&quot;1&quot; style=&quot;box-sizing: border-box; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255); border-color: rgb(255, 255, 255); border-style: solid; border-width: 0.8px; border-image: none 100% / 1 / 0 stretch; border-radius: 3px; font-size: 13px; padding: 0px 3px; display: inline-block; font-family: &amp;quot;DM Mono&amp;quot;, monospace; color: rgb(26, 28, 30); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;2 * num_layers * num_heads * head_dim * sequence_length * sizeof(datatype)&lt;/span&gt;&lt;br class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;022dad9b-f5fe-4674-8ad2-f313efca0379&quot; style=&quot;box-sizing: border-box; color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="FAd7lpdi-thVueiVJN3o-20">
+          <mxGeometry x="570" y="560" width="510" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-48" value="我想基于边云协同完成的prefill和decode分离，我有一些Jetson Orin NX和 Jetson Nano的设备，假设还有一台8*RTX 3090的GPU。&#xa;我可以怎么做？&#xa;我有一个想法，但是有很多问题没有考虑清楚：&#xa;首先我设计了3级调度，1级调度是根据设备计算性能划分prefill/decode实例，使用高计算性能的设备组成prefill实例，因为prefill是计算密集型任务，使用计算性能的设备比如云服务器和高计算性能边缘涉笔 Jetson Orin NX 可以在较低带宽情况下拥有较高的计算强度，跑满GPU。&#xa;第一级别的调度是构建prefill实例和decode实例，根据模型的内存需求和云服务器、边缘设备的内存预算，如用2台边缘设备 Jetson Orin NX来承担一个Llama 7B模型。或者在服务器上用几个GPU来承担一个Llama 13B的模型。&#xa;选取计算性能较低的边缘设备，多台这样的边缘设备组成一个decode实例。&#xa;选取什么样性能的设备，几台设备组成一个prefill/decode实例，这是第一级调度关心的问题。&#xa;第二级调度：在第一级调度的基础上，考虑针对每个选取的实例及其组成的相应设备，考虑并行测量和模型量化策略，对模型进行模型切分，做流水线并行或者张量并行，对解码实例做更低的量化精度等。因为解码任务是IO密集型，对误差容忍更高，因此更低的量化精度带来的误差累计更小，而预填充实例用更高的量化精度，以减少其累计误差。&#xa;第三级调度：KV cache传输，这部分我还没有想清楚，因为我不知道如何在边缘设备协同的场景下用低带宽如何传输KVcache，且我对KVcache的传输和复用等技术不太了解。但这部分的任务主要是KVcache传输，如何把KVcache高效的从prefill实例转移到解码实例，可能会用到一些技术能加速这个过程，如KVcache共享或者使用prefix技术来实现KVcache的复用。但具体怎么做我还是没有思路。&#xa;第四级调度：请求调度，对请求做批处理，给它分配对应的prefill实例和解码实例，如何做批处理，如何分配prefill实例和解码实例，是一开始就分配一对实例，还是先分配prefill实例，再分配解码实例等等这些问题都是我还没考虑清楚。&#xa;第四级调度和第一级调度可能存在重叠的问题。这也是我没有考虑清楚地方。&#xa;上面是我的想法，里面有很多我没考虑请求的地方，也是我技术和知识掌握的不足，我想让你帮助我完成这个方案和idea" style="text;whiteSpace=wrap;" vertex="1" parent="FAd7lpdi-thVueiVJN3o-20">
+          <mxGeometry x="-90" y="670" width="560" height="410" as="geometry" />
+        </mxCell>
         <mxCell id="FAd7lpdi-thVueiVJN3o-23" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="-100" y="18" width="40" height="552" as="geometry" />
+          <mxGeometry x="-130" y="18" width="40" height="552" as="geometry" />
         </mxCell>
         <mxCell id="SmYpZCKEzFdWcqqBFo2v-13" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;高&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FAd7lpdi-thVueiVJN3o-23" vertex="1">
           <mxGeometry width="40" height="30" as="geometry" />
@@ -130,7 +139,28 @@
           <mxGeometry y="522" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FAd7lpdi-thVueiVJN3o-1" value="&lt;strong class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;Computational Intensity&lt;/span&gt;&lt;/strong&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;is the ratio of arithmetic operations (computations) to memory operations (data movement).&lt;/span&gt;&lt;font class=&quot;notranslate immersive-translate-target-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; lang=&quot;zh-CN&quot; style=&quot;box-sizing: border-box; word-break: break-word; user-select: text; color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;font-size: 14px; box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;The units are typically&amp;nbsp;&lt;/span&gt;&lt;strong style=&quot;font-size: 14px; box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;FLOPs/byte&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 14px; box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;&amp;nbsp;(Floating-Point Operations per Byte).&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box;&quot;&gt;&lt;font class=&quot;notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; style=&quot;box-sizing: border-box; display: inline-block; margin: 8px 0px !important;&quot;&gt;&lt;font class=&quot;notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; style=&quot;box-sizing: border-box; font-family: inherit; font-size: 16px;&quot;&gt;&lt;strong class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;计算强度&lt;/span&gt;&lt;/strong&gt;&lt;span class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; style=&quot;box-sizing: border-box;&quot;&gt;是算术运算（计算）与内存运算（数据移动）的比率。单位通常是 FLOP/字节 （每字节浮点运算次数）。&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(26, 28, 30); font-family: &amp;quot;Google Sans Text&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255); box-sizing: border-box;&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; class=&quot;ng-star-inserted&quot;&gt;&lt;strong style=&quot;box-sizing: border-box; color: rgb(26, 28, 30); background-color: rgb(255, 255, 255);&quot; class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;ng-star-inserted&quot; data-immersive-translate-walked=&quot;b6808d9d-eaf3-433b-aa72-41b08178f8d1&quot; data-immersive-translate-paragraph=&quot;1&quot;&gt;Computational Intensity = Total Arithmetic Operations / Total Bytes Transferred&lt;font style=&quot;box-sizing: border-box;&quot; class=&quot;notranslate immersive-translate-target-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; lang=&quot;zh-CN&quot;&gt;&lt;br style=&quot;box-sizing: border-box;&quot;&gt;&lt;font style=&quot;box-sizing: border-box;&quot; class=&quot;notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper&quot; data-immersive-translate-translation-element-mark=&quot;1&quot;&gt;&lt;font style=&quot;box-sizing: border-box;&quot; class=&quot;notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner&quot; data-immersive-translate-translation-element-mark=&quot;1&quot;&gt;计算强度 = 总算术运算次数 / 总传输字节数&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="250" width="630" height="150" as="geometry" />
+          <mxGeometry x="950" y="246" width="630" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-27" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-630-d@2x.png;" vertex="1" parent="1">
+          <mxGeometry x="230" y="30" width="177.45" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-28" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-630-d@2x.png;" vertex="1" parent="1">
+          <mxGeometry x="390" y="30" width="177.45" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-29" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-630-d@2x.png;" vertex="1" parent="1">
+          <mxGeometry x="550" y="30" width="177.45" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-42" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-630-d@2x.png;" vertex="1" parent="1">
+          <mxGeometry x="72.55000000000001" y="120" width="177.45" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-43" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-630-d@2x.png;" vertex="1" parent="1">
+          <mxGeometry x="232.55" y="120" width="177.45" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-44" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-630-d@2x.png;" vertex="1" parent="1">
+          <mxGeometry x="392.55" y="120" width="177.45" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FAd7lpdi-thVueiVJN3o-45" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-630-d@2x.png;" vertex="1" parent="1">
+          <mxGeometry x="552.55" y="120" width="177.45" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
